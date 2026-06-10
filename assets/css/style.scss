@@ -83,6 +83,9 @@ body {
 
 a,
 i,
+.form-control,
+select,
+option,
 input,
 .btn {
     text-decoration: none;
@@ -1310,7 +1313,11 @@ button {
             select.form-control {
                 width: 100%;
                 cursor: pointer;
-                appearance: auto;
+                appearance: none;
+                background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6"><path fill="%23333" d="M1 1l4 4 4-4"/></svg>') no-repeat;
+                background-position: right 15px center;
+                padding-right: 35px;
+                background-color: white;
             }
 
             .privacy-label {
@@ -1330,8 +1337,30 @@ button {
                 }
             }
         }
-
-
     }
+}
 
+.btn-submit {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    gap: 10px;
+    width: 400px;
+    height: 54px;
+    background: #FF7B32;
+    border-radius: 100px;
+    font-family: 'Rounded Mplus 1c';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+
+    &:hover {
+        background: #177420;
+        color: #fff;
+    }
 }
