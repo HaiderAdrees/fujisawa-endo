@@ -34,6 +34,12 @@ $(document).ready(function () {
       $("#header").removeClass("active");
     }
   });
+
+  // Back to top
+  $(".back-to-top").on("click", function (e) {
+    e.preventDefault();
+    $("html, body").animate({ scrollTop: 0 }, 600);
+  });
 });
 
 // Side Nav
