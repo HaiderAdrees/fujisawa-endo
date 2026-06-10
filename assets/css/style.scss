@@ -83,6 +83,7 @@ body {
 
 a,
 i,
+input,
 .btn {
     text-decoration: none;
     transition: all 0.3s ease-in-out;
@@ -92,8 +93,8 @@ textarea,
 input,
 .navbar-toggler,
 button {
-    outline: 2px solid transparent;
-    box-shadow: none;
+    outline: 2px solid transparent !important;
+    box-shadow: none !important;
 }
 
 ::-webkit-scrollbar {
@@ -1142,4 +1143,195 @@ button {
             }
         }
     }
+}
+
+.contact-hero-section {
+    width: 100%;
+    display: flex;
+    position: relative;
+
+    .contact-hero-v1 {
+        position: absolute;
+        left: 0;
+        bottom: -110px;
+        z-index: 1;
+    }
+
+    .hero-banner {
+        height: 425px;
+        width: 790px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .hero-content {
+        width: calc(100% - 790px);
+        padding: 30px 30px 30px 100px;
+        height: auto;
+
+        .breadcrumb {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 60px;
+
+            span {
+                font-family: 'Noto Sans JP';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 150%;
+                color: #9C4500;
+            }
+        }
+
+        h2 {
+            font-family: 'Rounded Mplus 1c';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 59px;
+            color: #3B3B3B;
+            height: 59px;
+            width: fit-content;
+            margin-bottom: 30px;
+            padding: 5px 10px;
+        }
+
+        p {
+            font-family: 'Noto Sans JP';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            color: #000000;
+        }
+    }
+}
+
+.contact-form-section {
+    padding: 80px 0px 120px;
+
+    .form-card {
+        width: 100%;
+        max-width: 800px;
+        margin: 0px auto;
+
+        .form-group {
+            display: flex;
+            margin-bottom: 30px;
+
+            .title {
+                width: 160px;
+                display: flex;
+                padding: 18px 0px;
+                gap: 5px;
+                font-family: 'Noto Sans JP';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 150%;
+                color: #000000;
+
+                span {
+                    font-family: 'Noto Sans JP';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 12px;
+                    line-height: 150%;
+                    text-align: center;
+                    color: #ED792B;
+                }
+            }
+
+            .input {
+                width: calc(100% - 160px);
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                flex-wrap: wrap;
+            }
+
+            .form-control {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 20px;
+                gap: 10px;
+                min-height: 64px;
+                background: #FFFFFF;
+                border: 1px solid #DDDDDD;
+                border-radius: 10px;
+                padding: 20px;
+                color: #000;
+                outline: none;
+
+                &::placeholder {
+                    font-family: 'Noto Sans JP';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 150%;
+                    color: #999999;
+                }
+            }
+
+            .checkbox-group {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                gap: 20px;
+
+                label {
+                    font-family: 'Noto Sans JP';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 150%;
+                    color: #000000;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                }
+
+                .check-box {
+                    width: 30px;
+                    height: 30px;
+                    background: #FFFFFF;
+                    border: 1px solid #D9D9D9 !important;
+                    border-radius: 5px;
+                }
+            }
+
+            select.form-control {
+                width: 100%;
+                cursor: pointer;
+                appearance: auto;
+            }
+
+            .privacy-label {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                a {
+
+                    font-family: 'Noto Sans JP';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 150%;
+                    text-decoration-line: underline;
+                    color: #000000;
+                }
+            }
+        }
+
+
+    }
+
 }
