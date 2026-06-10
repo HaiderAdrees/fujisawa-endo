@@ -870,3 +870,159 @@ button {
         }
     }
 }
+
+.usage-flow-section {
+    padding: 100px 0px;
+    position: relative;
+
+    .flow-v1 {
+        position: absolute;
+        top: -92px;
+        left: 0px;
+        z-index: 1;
+    }
+
+    .flow-v2 {
+        position: absolute;
+        top: -80px;
+        right: 0px;
+        z-index: 1;
+    }
+
+    .flow-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 1200px;
+
+        .flow-pills {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 60px 10px;
+            gap: 10px;
+            isolation: isolate;
+            width: 167px;
+            height: 240px;
+            background: #FEFEFF;
+            border: 4px solid #FEEFD0;
+            border-radius: 100px;
+            position: relative;
+
+            .arrow-right {
+                position: absolute;
+                right: -40px;
+                top: 50%;
+                transform: translateY(-50%);
+
+            }
+        }
+
+        span {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0px;
+            gap: 10px;
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            top: -19px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #FF7B32;
+            border-radius: 100px;
+            font-family: 'Rounded Mplus 1c';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 53px;
+            letter-spacing: 0.1em;
+            color: #FFFFFF;
+        }
+
+        p {
+            font-family: 'Noto Sans JP';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 22px;
+            margin-bottom: 0px;
+            text-align: center;
+            color: #534133;
+        }
+    }
+}
+
+.contact-us-section {
+    padding: 20px 0px;
+
+    .contact-card {
+        background: linear-gradient(90deg, #FFFFFF 49.21%, rgba(255, 255, 255, 0) 74.83%), url(../images/contact-bg.png);
+        border-radius: 40px;
+        width: 100%;
+        min-height: 200px;
+        padding: 66px 70px;
+
+        h4 {
+            width: fit-content;
+            font-family: 'Rounded Mplus 1c';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 53px;
+            display: flex;
+            align-items: flex-end;
+            letter-spacing: 0.1em;
+            color: #3B3B3B;
+            border-bottom: 11px solid #FFE742;
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-family: 'Noto Sans JP';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            color: #534133;
+            margin-bottom: 30px;
+        }
+
+        .contact-number {
+            display: flex;
+            justify-content: space-between;
+            max-width: 615px;
+            width: 100%;
+
+            .number {
+
+                h5 {
+                    font-family: 'Rounded Mplus 1c';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 36px;
+                    line-height: 53px;
+                    color: #534133;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    font-family: 'Noto Sans JP';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 150%;
+                    color: #534133;
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    }
+}
