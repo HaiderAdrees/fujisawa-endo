@@ -347,6 +347,8 @@ button {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        position: relative;
+        z-index: 1;
     }
 
     h6 {
@@ -1148,7 +1150,7 @@ button {
     }
 }
 
-.contact-hero-section {
+.other-hero-section {
     width: 100%;
     display: flex;
     position: relative;
@@ -1160,21 +1162,18 @@ button {
         z-index: 1;
     }
 
-    .hero-banner {
-        height: 425px;
-        width: 790px;
-
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-    }
-
     .hero-content {
         width: calc(100% - 790px);
         padding: 30px 30px 30px 100px;
         height: auto;
+        position: relative;
+
+        .classroom-hero-v1 {
+            position: absolute;
+            right: -20px;
+            bottom: -40px;
+            z-index: 1;
+        }
 
         .breadcrumb {
             display: flex;
@@ -1201,8 +1200,13 @@ button {
             color: #3B3B3B;
             height: 59px;
             width: fit-content;
-            margin-bottom: 30px;
+            margin-bottom: 10px;
             padding: 5px 10px;
+
+            span {
+                font-family: 'Rounded Mplus 1c';
+                color: #FF7B32;
+            }
         }
 
         p {
@@ -1210,8 +1214,22 @@ button {
             font-style: normal;
             font-weight: 400;
             font-size: 16px;
+            margin-top: 30px;
             line-height: 150%;
             color: #000000;
+        }
+    }
+
+    .hero-banner {
+        height: 425px;
+        width: 790px;
+        position: relative;
+        z-index: 2;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
     }
 }
@@ -1295,6 +1313,7 @@ button {
                     font-weight: 700;
                     font-size: 16px;
                     line-height: 150%;
+                    cursor: pointer;
                     color: #000000;
                     display: flex;
                     align-items: center;
@@ -1307,6 +1326,26 @@ button {
                     background: #FFFFFF;
                     border: 1px solid #D9D9D9 !important;
                     border-radius: 5px;
+                    appearance: none;
+                    cursor: pointer;
+                    flex-shrink: 0;
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                .check-box:checked {
+                    background: #4F9858;
+                    border-color: #4F9858;
+                }
+
+                .check-box:checked::after {
+                    content: "✓";
+                    color: #FFFFFF;
+                    font-size: 20px;
+                    font-weight: bold;
+                    line-height: 1;
                 }
             }
 
@@ -1422,6 +1461,467 @@ button {
                 font-size: 16px;
                 line-height: 150%;
                 color: #000000;
+            }
+        }
+    }
+}
+
+.classroom-concept-section {
+    padding: 60px 0px 80px;
+
+    .banner {
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .content {
+        padding: 20px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h3 {
+            font-family: 'Rounded Mplus 1c';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 53px;
+            display: flex;
+            align-items: flex-end;
+            letter-spacing: 0.1em;
+            color: #3B3B3B;
+            border-bottom: 11px solid #FFE742;
+            margin-bottom: 20px;
+        }
+
+        h5 {
+            font-family: 'Noto Sans JP';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 150%;
+            color: #3B3B3B;
+            margin-bottom: 40px;
+        }
+
+        h6 {
+            font-family: 'Noto Sans JP';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 150%;
+            color: #FF7B32;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-family: 'Noto Sans JP';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            color: #000000;
+        }
+    }
+}
+
+.management-philosophy-section {
+    width: 100%;
+    min-height: 300px;
+    background: #FFF2CF;
+    border-radius: 200px;
+    padding: 0px 0px 100px;
+    position: relative;
+    z-index: 1;
+
+    .center-heading .heading {
+        margin-top: -35px;
+    }
+
+    .management-philosophy-row {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 60px;
+        align-items: center;
+
+        .m-p-card {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            width: 270px;
+            height: 270px;
+            background: #FFFFFF;
+            border-radius: 1000px;
+
+            svg {
+                margin-bottom: 20px;
+            }
+
+            h6 {
+                margin-bottom: 10px;
+                font-family: 'Noto Sans JP';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 29px;
+                text-align: center;
+                color: #FF7B32;
+            }
+
+            p {
+                margin-bottom: 0px;
+                font-family: 'Noto Sans JP';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 150%;
+                text-align: center;
+                color: #000000;
+            }
+        }
+    }
+}
+
+.classroom-strengths-section {
+    width: 100%;
+    min-height: 400px;
+    background: #FEF9D2;
+    border-radius: 200px;
+    padding: 0px 0px 40px;
+    position: relative;
+
+    .sc-v1 {
+        position: absolute;
+        right: 0;
+        top: 30%;
+        z-index: 1;
+    }
+
+    .sc-v2 {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        z-index: 1;
+    }
+
+    .center-heading .heading {
+        margin-top: -35px;
+    }
+
+    .strengths-cards-row {
+        margin-bottom: 40px;
+
+        .banner {
+            width: 100%;
+
+            img {
+                width: 100%;
+                height: 100%;
+                max-width: 570px;
+                max-height: 475px;
+            }
+        }
+
+        .content {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            max-width: 570px;
+            margin: 0px auto;
+
+            .heading {
+                margin-bottom: 20px;
+            }
+
+            h6 {
+                font-family: 'Noto Sans JP';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 150%;
+                color: #FF7B32;
+                margin-bottom: 20px;
+            }
+
+            p {
+                display: flex;
+                align-items: center;
+                margin-bottom: 10px;
+                gap: 10px;
+                font-family: 'Noto Sans JP';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                color: #000000;
+
+                span {
+                    font-family: 'Noto Sans JP';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    color: #000000;
+                }
+            }
+        }
+
+        .strengths-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 30px;
+            gap: 20px;
+            isolation: isolate;
+            max-width: 270px;
+            height: calc(100% - 20px);
+            margin-bottom: 20px;
+            background: #FFFFFF;
+            border: 4px solid #FEF9D2;
+            border-radius: 40px;
+
+            h1 {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 64px;
+                line-height: 50px;
+                color: #000;
+                margin-bottom: 0px;
+            }
+
+            h5 {
+                font-family: 'Noto Sans JP';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 150%;
+                text-align: center;
+                color: #3B3B3B;
+                max-width: 210px;
+                margin-bottom: 0px;
+            }
+
+            p {
+
+                font-family: 'Noto Sans JP';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 150%;
+                text-align: center;
+                color: #534133;
+                margin-bottom: 0px;
+            }
+        }
+    }
+}
+
+.service-introduction-section {
+    padding: 0px 0px 100px;
+    position: relative;
+
+    .si-v1 {
+        position: absolute;
+        top: -110px;
+        left: 0px;
+        z-index: 1;
+    }
+
+    .si-v2 {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        z-index: 1;
+    }
+
+    .center-heading .heading {
+        margin-top: -30px;
+    }
+
+    .service-introduction-card {
+        width: 100%;
+        padding: 40px;
+        max-width: 570px;
+        height: 450px;
+        position: relative;
+        z-index: 2;
+        margin: 0px auto;
+        background: #FFFFFF;
+        border-radius: 40px;
+        height: calc(100% - 40px);
+        margin-bottom: 40px;
+
+        h6 {
+            font-family: 'Noto Sans JP';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 26px;
+            line-height: 150%;
+            color: #FF7B32;
+            margin-bottom: 10px;
+        }
+
+        .tag {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 5px 20px;
+            gap: 10px;
+            height: 34px;
+            background: #FF7B32;
+            border-radius: 100px;
+            width: fit-content;
+            margin-bottom: 20px;
+            font-family: 'Noto Sans JP';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 150%;
+            color: #FFFFFF;
+        }
+
+        .banner {
+            width: 100%;
+            height: 267px;
+            border-radius: 40px;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .content {
+            p {
+                font-family: 'Noto Sans JP';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 150%;
+                color: #534133;
+                margin-bottom: 20px;
+            }
+
+            .points {
+                display: flex;
+                align-items: center;
+                margin-bottom: 10px;
+                gap: 10px;
+                font-family: 'Noto Sans JP';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                color: #000000;
+
+                span {
+                    font-family: 'Noto Sans JP';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    color: #000000;
+                    width: calc(100% - 30px);
+                }
+            }
+        }
+    }
+}
+
+.flow-of-the-day-section {
+    padding: 0px 0px 80px;
+    position: relative;
+
+    .fd-v1 {
+        position: absolute;
+        top: -40px;
+        right: 230px;
+        z-index: 1;
+    }
+
+    .flow-heading {
+        margin-bottom: 10px;
+    }
+
+    .center-heading .heading {
+        margin-top: -40px;
+    }
+
+    .flow-section {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        .line {
+            position: absolute;
+            height: 100%;
+            width: 4px;
+            background: #FFE742;
+            margin-left: 98px;
+        }
+
+        .flow-card {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            position: relative;
+
+
+            .time {
+                width: 110px;
+                font-family: 'Noto Sans JP';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 26px;
+                line-height: 150%;
+                color: #3B3B3B;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .dot {
+                    width: 20px;
+                    height: 20px;
+                    background: #FFE742;
+                    border-radius: 100px;
+                }
+            }
+
+            .detail {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-left: 50px;
+                width: calc(100% - 110px);
+
+                h6 {
+                    font-family: 'Noto Sans JP';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 26px;
+                    line-height: 150%;
+                    color: #3B3B3B;
+                    margin-bottom: 0px;
+                }
+
+                .banner {
+                    width: 185px;
+                    height: 185px;
+                    border-radius: 40px;
+                    object-fit: cover;
+                }
             }
         }
     }
