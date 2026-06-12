@@ -1,10 +1,12 @@
 $(document).ready(function () {
   // owl-carousel
-  $("#owl-slider-one").owlCarousel({
+  var owl = $("#owl-slider-one");
+
+  owl.owlCarousel({
     loop: true,
-    margin: 10,
-    nav: true,
-    dots: true,
+    margin: 40,
+    nav: false, // Disable Owl default arrows
+    dots: false,
     autoplay: true,
     autoplayTimeout: 10000,
     slideTransition: "linear",
@@ -14,17 +16,25 @@ $(document).ready(function () {
         items: 1,
       },
       768: {
-        items: 2,
+        items: 1.5,
       },
       991: {
-        items: 4,
+        items: 2,
       },
       1200: {
-        items: 5,
+        items: 3.6,
       },
     },
   });
 
+  // Custom HTML buttons
+  $(".custom-prev").click(function () {
+    owl.trigger("prev.owl.carousel");
+  });
+
+  $(".custom-next").click(function () {
+    owl.trigger("next.owl.carousel");
+  });
   // Header Active
   $(window).scroll(function () {
     const scroll = $(window).scrollTop();
