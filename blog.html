@@ -40,15 +40,15 @@
                         </span>
                     </div>
                     <div class="nav-bar">
-                        <a href="">教室について</a>
-                        <a href="">支援内容</a>
-                        <a href="">施設紹介</a>
-                        <a href="">スタッフ紹介</a>
-                        <a href="">ブログ</a>
-                        <a href="">ご利用案内</a>
+                        <a href="classroom.html">教室について</a>
+                        <a href="#">支援内容</a>
+                        <a href="facilities.html">施設紹介</a>
+                        <a href="#">スタッフ紹介</a>
+                        <a href="blog.html">ブログ</a>
+                        <a href="contact.html">ご利用案内</a>
                     </div>
                     <div class="nav-action">
-                        <a href="" class="btn btn-primary">
+                        <a href="contact.html" class="btn btn-primary">
                             <svg width="20" height="22" viewBox="0 0 20 22" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -135,39 +135,39 @@
             <img src="assets/images/blog-main-v1.png" class="blog-main-v1" alt="">
             <div class="md-container">
                 <div class="tab-pills">
-                    <a href="#" class="pill active">
+                    <a href="#" class="pill active" data-category="all">
                         すべて
                         <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0.353516 0.355469L4.59616 4.59811L8.8388 0.355469" stroke="#177420" />
                         </svg>
                     </a>
-                    <a href="#" class="pill">
+                    <a href="#" class="pill" data-category="活動報告">
                         活動報告
                         <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0.353516 0.355469L4.59616 4.59811L8.8388 0.355469" stroke="#177420" />
                         </svg>
                     </a>
-                    <a href="#" class="pill">
+                    <a href="#" class="pill" data-category="イベント">
                         イベント
                         <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0.353516 0.355469L4.59616 4.59811L8.8388 0.355469" stroke="#177420" />
                         </svg>
                     </a>
-                    <a href="#" class="pill">
+                    <a href="#" class="pill" data-category="お知らせ">
                         お知らせ
                         <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0.353516 0.355469L4.59616 4.59811L8.8388 0.355469" stroke="#177420" />
                         </svg>
                     </a>
-                    <a href="#" class="pill">
+                    <a href="#" class="pill" data-category="日々の様子">
                         日々の様子
                         <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0.353516 0.355469L4.59616 4.59811L8.8388 0.355469" stroke="#177420" />
                         </svg>
                     </a>
                 </div>
-                <div class="row">
-                    <div class="col-lg-4">
+                <div class="row" id="blog-grid">
+                    <div class="col-lg-4 blog-item" data-category="お知らせ">
                         <div class="blog-card">
                             <div class="blog-banner">
                                 <img src="assets/images/blog1.png" alt="">
@@ -187,7 +187,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 blog-item" data-category="イベント">
                         <div class="blog-card">
                             <div class="blog-banner">
                                 <img src="assets/images/blog2.png" alt="">
@@ -207,7 +207,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 blog-item" data-category="お知らせ">
                         <div class="blog-card">
                             <div class="blog-banner">
                                 <img src="assets/images/blog3.png" alt="">
@@ -226,7 +226,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 blog-item" data-category="お知らせ">
                         <div class="blog-card">
                             <div class="blog-banner">
                                 <img src="assets/images/blog1.png" alt="">
@@ -246,7 +246,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 blog-item" data-category="イベント">
                         <div class="blog-card">
                             <div class="blog-banner">
                                 <img src="assets/images/blog2.png" alt="">
@@ -266,7 +266,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 blog-item" data-category="お知らせ">
                         <div class="blog-card">
                             <div class="blog-banner">
                                 <img src="assets/images/blog3.png" alt="">
@@ -496,7 +496,7 @@
                             </p>
                         </div>
                         <div>
-                            <a href="" class="btn btn-primary">
+                            <a href="contact.html" class="btn btn-primary">
                                 <svg width="20" height="22" viewBox="0 0 20 22" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -577,21 +577,21 @@
                             <div class="row">
                                 <div class="col-lg-4">
                                     <div class="f-nav">
-                                        <a href="">教室について</a>
-                                        <a href="">支援内容</a>
-                                        <a href="">施設紹介</a>
+                                        <a href="classroom.html">教室について</a>
+                                        <a href="#">支援内容</a>
+                                        <a href="facilities.html">施設紹介</a>
                                     </div>
                                 </div>
                                 <div class="col-lg-4">
                                     <div class="f-nav">
-                                        <a href="">スタッフ紹介</a>
-                                        <a href="">ブログ</a>
-                                        <a href="">ご利用案内</a>
+                                        <a href="#">スタッフ紹介</a>
+                                        <a href="blog.html">ブログ</a>
+                                        <a href="contact.html">ご利用案内</a>
                                     </div>
                                 </div>
                                 <div class="col-lg-4">
                                     <div class="f-nav">
-                                        <a href="">お問い合わせ</a>
+                                        <a href="contact.html">お問い合わせ</a>
                                     </div>
                                 </div>
                             </div>
@@ -628,6 +628,25 @@
     <script src="assets/js/vendors/aos.js"></script>
     <script src="assets/js/vendors/owl.carousel.min.js"></script>
     <script src="assets/js/script.js"></script>
+    <script>
+        document.querySelectorAll('.tab-pills .pill').forEach(function(pill) {
+            pill.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelectorAll('.tab-pills .pill').forEach(function(p) {
+                    p.classList.remove('active');
+                });
+                this.classList.add('active');
+                var category = this.getAttribute('data-category');
+                document.querySelectorAll('#blog-grid .blog-item').forEach(function(item) {
+                    if (category === 'all' || item.getAttribute('data-category') === category) {
+                        item.style.display = '';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
 
 </body>
 
