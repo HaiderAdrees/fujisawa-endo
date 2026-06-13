@@ -1,7 +1,259 @@
-@media only screen and (max-width: 1200px) {}
+@media only screen and (max-width: 1200px) {
+    .hero-section .hero-bottom-left {
+        max-width: 250px;
+        bottom: 0px;
+    }
 
-@media only screen and (max-width: 991px) {}
+    .hero-section .hero-bottom-right {
+        max-width: 140px;
+    }
 
-@media screen and (max-width: 768px) {}
+    .strengths-section .strengths-row {
+        gap: 30px 30px;
+    }
 
-@media screen and (max-width: 450px) {}
+    .strengths-section .strengths-row .strengths-card .arrow1 {
+        width: 80px;
+        right: -60px;
+    }
+
+    .strengths-section .strengths-row .strengths-card .arrow3 {
+        width: 80px;
+        right: -60px;
+    }
+
+    .strengths-section .strengths-row .strengths-card .heading .text {
+        font-size: 24px;
+    }
+
+    .strengths-section .strengths-row .strengths-card .heading .number {
+        font-size: 70px;
+    }
+
+    .strengths-section .strengths-row .strengths-card {
+        padding: 40px 30px;
+    }
+
+    .strengths-section .strengths-row .strengths-card .discription .text p {
+        font-size: 14px;
+    }
+
+    .strengths-section .strengths-row .strengths-card .discription .img2 {
+        margin-top: -80px;
+    }
+
+    .support-details-section .support-details-row .support-card {
+        height: 220px;
+        width: 220px;
+    }
+
+    .support-details-section .support-details-row {
+        gap: 15px 20px;
+    }
+
+    .facility-section .facility-row {
+        gap: 30px;
+    }
+
+    .blog-card .blog-content {
+        padding: 25px;
+    }
+
+    .support-details-section .support-v1 {
+        width: 100px;
+    }
+
+    .support-details-section .support-v2 {
+        width: 60px;
+    }
+
+    .support-details-section .support-v3 {
+        width: 160px;
+    }
+
+    .staff-section .staff-v2 {
+        width: 120px;
+    }
+
+    .usage-flow-section .flow-v1 {
+        width: 140px;
+    }
+
+    .usage-flow-section .flow-v2 {
+        width: 100px;
+    }
+
+    .nav-action {
+        display: none;
+    }
+
+    .header .header-inner .nav-bar a {
+        padding: 0px 15px;
+    }
+
+    .hero-section .hero-content {
+        padding: 100px 0px 200px;
+    }
+}
+
+@media only screen and (min-width: 991px) {
+    .mobile-header {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .header {
+        display: none;
+    }
+
+    .hero-section .hero-content h2 {
+        font-size: 30px;
+        line-height: normal;
+    }
+
+    .hero-section {
+        height: 600px;
+    }
+
+    .hero-section .hero-content {
+        padding: 100px 0px;
+    }
+
+    .hero-section .hero-bottom-left {
+        max-width: 170px;
+        bottom: 0px;
+    }
+
+    .hero-section .hero-bottom-right {
+        max-width: 120px;
+    }
+
+    .center-heading h3 {
+        font-size: 30px;
+
+        span {
+            font-size: 42px;
+        }
+    }
+
+    .strengths-section .strengths-row {
+        flex-direction: column;
+    }
+
+    .strengths-section .strengths-row .strengths-card {
+        width: 100%;
+    }
+
+    .support-details-section,
+    .staff-section,
+    .blog-section,
+    .strengths-section {
+        border-radius: 100px;
+    }
+
+    .footer-section .bottom {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-section .bottom .bottom-nav {
+        flex-direction: column;
+    }
+
+    .strengths-section .strengths-row .strengths-card .arrow1 {
+        transform: rotate(63deg);
+        left: 33px;
+        bottom: -36px;
+        top: auto;
+        right: auto;
+    }
+
+    .strengths-section .strengths-row .strengths-card .arrow2 {
+        transform: rotate(-12deg);
+        height: 96px;
+        left: auto;
+        bottom: -67px;
+        top: auto;
+        right: 61px;
+    }
+
+    .strengths-section .strengths-row .strengths-card .arrow3 {
+        transform: rotate(63deg);
+        left: 33px;
+        bottom: -36px;
+        top: auto;
+        right: auto;
+    }
+
+    .strengths-section .strengths-row .strengths-card .top-left,
+    .strengths-section .strengths-row .strengths-card .top-right {
+        right: auto;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .support-details-section .support-details-row .support-card {
+        height: 180px;
+        width: 180px;
+        gap: 10px;
+
+        svg {
+            max-height: 50px;
+            max-width: 50px;
+        }
+    }
+
+    .support-details-section .support-details-row .support-card p {
+        font-size: 16px;
+    }
+
+    .footer-section .contact-card {
+        padding: 40px;
+    }
+
+    .footer-section .contact-card h4 {
+        font-size: 30px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .facility-section .facility-row {
+        flex-direction: column;
+    }
+
+    .strengths-section .strengths-row .strengths-card .heading {
+        flex-direction: column;
+    }
+
+    .strengths-section .strengths-row .strengths-card .discription {
+        flex-direction: column;
+    }
+
+    .strengths-section .strengths-row .strengths-card .discription .text {
+        width: 100%;
+
+    }
+
+    .strengths-section .strengths-row .strengths-card .discription .img {
+        width: 100%;
+        height: 162px;
+        object-position: center;
+    }
+
+    .support-details-section .support-details-row .support-card {
+        width: 100%;
+        height: 114px;
+        flex-direction: row;
+    }
+
+    .usage-flow-section .flow-v2,
+    .usage-flow-section .flow-v1,
+    .support-details-section .support-v3,
+    .support-details-section .support-v2,
+    .staff-section .staff-v1,
+    .staff-section .staff-v2 {
+        display: none;
+    }
+}
