@@ -183,6 +183,10 @@ button {
     display: flex;
     align-items: center;
     background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
 
     .header-inner {
         width: 100%;
@@ -245,6 +249,11 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
 
     .nav-brand {
         display: flex;
@@ -2693,5 +2702,32 @@ button {
                 justify-content: center !important;
             }
         }
+    }
+}
+
+.reservation-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 20px;
+    gap: 6px;
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    background: #177420;
+    border-radius: 100px;
+
+    span {
+        font-family: 'Noto Sans JP';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 19px;
+        text-align: center;
+        color: #FFFFFF;
     }
 }
