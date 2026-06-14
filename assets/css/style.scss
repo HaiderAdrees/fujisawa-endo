@@ -1510,6 +1510,8 @@ button {
     &:hover {
         background: #177420;
         color: #fff;
+        transform: translateY(-2px);
+        box-shadow: 0 10px 24px #177420;
     }
 }
 
@@ -1707,6 +1709,7 @@ button {
     border-radius: 200px;
     padding: 0px 0px 40px;
     position: relative;
+    z-index: 2;
 
     .sc-v1 {
         position: absolute;
@@ -1845,6 +1848,7 @@ button {
 .service-introduction-section {
     padding: 0px 0px 100px;
     position: relative;
+    z-index: 2;
 
     .si-v1 {
         position: absolute;
@@ -2507,6 +2511,8 @@ button {
     border-radius: 200px;
     padding: 0px 0px 100px;
     margin-bottom: 100px;
+    position: relative;
+    z-index: 2;
 
     .center-heading .heading {
         margin-top: -50px;
