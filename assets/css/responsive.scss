@@ -1019,6 +1019,25 @@
     .contact-info {
         margin-bottom: 60px;
     }
+
+    .reservation-btn {
+        height: 70px;
+        width: 70px;
+        padding: 5px;
+        gap: 3px !important;
+        bottom: 10px !;
+        right: 10px !;
+
+        svg {
+            max-width: 15px;
+            max-height: 15px;
+        }
+
+        span {
+            line-height: normal;
+            font-size: 10px;
+        }
+    }
 }
 
 
@@ -1106,6 +1125,7 @@
     .facility-section {
         padding: 60px 0px 100px;
     }
+
     .other-hero-section .hero-content {
         padding: 0px 10px;
     }
