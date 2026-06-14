@@ -159,6 +159,30 @@
     .flow-of-the-day-section .flow-section .flow-card .detail {
         padding-left: 30px;
     }
+
+    .atmosphere-section .content h3 {
+        font-size: 32px;
+    }
+
+    .atmosphere-section .content h4 {
+        font-size: 24px;
+        line-height: normal;
+        margin-bottom: 20px;
+    }
+
+    .equipment-introduction-section .equipment-card h4 {
+        font-size: 20px;
+    }
+
+    .equipment-introduction-section .equipment-card p {
+        font-size: 16px;
+    }
+
+    .transportation-section .transportation-v1,
+    .safety-initiatives .safety-v2,
+    .safety-initiatives .safety-v1 {
+        max-width: 100px;
+    }
 }
 
 @media only screen and (max-width: 1100px) {
@@ -400,6 +424,118 @@
 
     .service-introduction-section .service-introduction-card .banner {
         margin-bottom: 20px;
+    }
+
+    .atmosphere-section .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .atmosphere-section {
+        border-radius: 40px;
+    }
+
+    .other-hero-section .hero-content {
+        margin-top: -20px;
+        overflow: show;
+        position: relative;
+        z-index: 1;
+    }
+
+    .other-hero-section .hero-banner {
+        position: relative;
+        z-index: 0;
+    }
+
+    .equipment-introduction-section {
+        .heading {
+            h3 {
+                max-width: 260px;
+                text-align: center;
+            }
+        }
+    }
+
+    .transportation-section .transportation-v1,
+    .safety-initiatives .safety-v2,
+    .safety-initiatives .safety-v1,
+    .safety-initiatives .safety-v1 {
+        display: none;
+    }
+
+    .transportation-section .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .transportation-section .content h5 {
+        text-align: center;
+    }
+
+    .transportation-section .content p {
+        width: 100%;
+        max-width: 255px;
+    }
+
+    .job-categories-section .job-categories-row .cat-pills {
+        padding: 10px 20px;
+        height: auto;
+        border-radius: 20px;
+        font-size: 20px;
+    }
+
+    .staff-section,
+    .job-categories-section {
+        border-radius: 40px;
+    }
+
+    .atmosphere-section {
+        margin-top: 20px;
+    }
+
+    .atmosphere-section {
+        padding-top: 40px;
+    }
+
+    .atmosphere-section .atmosphere-card {
+        height: 120px;
+    }
+
+    .atmosphere-section .atmosphere-card .pill {
+        left: 10px;
+        bottom: 10px;
+    }
+
+    .atmosphere-section .atmosphere-card .pill {
+        height: 30px;
+    }
+
+    .atmosphere-section {
+        padding-bottom: 30px;
+    }
+
+    .equipment-introduction-section {
+        padding: 40px 0px;
+    }
+
+    .transportation-section .content h5 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .job-categories-section .center-heading .heading {
+        margin-top: -10px;
+    }
+
+    .job-categories-section {
+        padding-bottom: 60px;
+        margin-bottom: 60px;
     }
 }
 
