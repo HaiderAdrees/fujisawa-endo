@@ -13,7 +13,8 @@ $(document).ready(function () {
     autoplaySpeed: 1000,
     responsive: {
       0: {
-        items: 1.3,
+        items: 1.2,
+        margin: 20,
       },
       768: {
         items: 2.5,
