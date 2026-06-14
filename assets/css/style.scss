@@ -1306,7 +1306,8 @@ button {
             font-size: 40px;
             line-height: 59px;
             color: #3B3B3B;
-            height: 59px;
+            background: #fff;
+            min-height: 59px;
             width: fit-content;
             margin-bottom: 10px;
             padding: 5px 10px;
@@ -1603,6 +1604,7 @@ button {
             align-items: flex-end;
             letter-spacing: 0.1em;
             color: #3B3B3B;
+            width: fit-content;
             border-bottom: 11px solid #FFE742;
             margin-bottom: 20px;
         }
@@ -1726,6 +1728,12 @@ button {
 
     .strengths-cards-row {
         margin-bottom: 40px;
+        overflow-x: auto !important;
+
+        &::-webkit-scrollbar {
+            width: 0px;
+            height: 0px;
+        }
 
         .banner {
             width: 100%;
@@ -2551,4 +2559,12 @@ button {
         color: #666666;
         margin-bottom: 0px;
     }
+}
+
+.order-1 {
+    order: 1 !important;
+}
+
+.order-2 {
+    order: 2 !important;
 }
