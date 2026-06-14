@@ -173,7 +173,7 @@ button {
     &:hover {
         background: #ff7b32 !important;
         transform: translateY(-2px);
-        box-shadow: 0 10px 24px #ff7a3220;
+        box-shadow: 0 10px 24px rgba(255, 123, 50, 0.4) !important;
     }
 }
 
@@ -1511,7 +1511,7 @@ button {
         background: #177420;
         color: #fff;
         transform: translateY(-2px);
-        box-shadow: 0 10px 24px #177420;
+        box-shadow: 0 10px 24px rgba(23, 116, 32, 0.4);
     }
 }
 
@@ -2091,6 +2091,7 @@ button {
         .pill.active {
             color: #FFFFFF;
             background: #FC9557;
+            box-shadow: 0 8px 20px rgba(252, 149, 87, 0.45);
 
             svg path {
                 stroke: #FFFFFF !important;
@@ -2125,6 +2126,7 @@ button {
         &:hover {
             background: #FF7B32;
             color: #fff;
+            box-shadow: 0 8px 20px rgba(255, 123, 50, 0.4);
 
             svg path {
                 stroke: #fff;
@@ -2173,6 +2175,12 @@ button {
             border: none;
             background: #FFFFFF;
             border-radius: 100px;
+            transition: box-shadow .3s ease, transform .3s ease;
+
+            &:hover {
+                box-shadow: 0 8px 20px rgba(23, 116, 32, 0.3);
+                transform: translateY(-2px);
+            }
         }
     }
 }
