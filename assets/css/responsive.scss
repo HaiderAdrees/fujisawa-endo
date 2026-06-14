@@ -537,6 +537,11 @@
         padding-bottom: 60px;
         margin-bottom: 60px;
     }
+
+    .main-blog-section .blog-main-v1,
+    .other-hero-section .contact-hero-v1 {
+        max-width: 100px;
+    }
 }
 
 @media screen and (min-width: 769px) {
@@ -884,6 +889,31 @@
         padding-bottom: 80px;
     }
 
+    .main-blog-section .blog-main-v1,
+    .other-hero-section .contact-hero-v1 {
+        display: none;
+    }
+    .main-blog-section .tab-pills {
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+    .blog-card {
+        margin-bottom: 20px;
+    }
+    .pagination .page-link {
+        height: 40px;
+        width: 40px;
+    }
+    .articles-section {
+        border-radius: 40px;
+    }
+    .vw-100 {
+        width: 100% !important;
+    }
+    .main-blog-section .tab-pills .pill {
+        padding: 10px 15px;
+        height: auto;
+    }
 }
 
 

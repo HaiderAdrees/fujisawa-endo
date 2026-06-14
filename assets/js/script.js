@@ -13,13 +13,13 @@ $(document).ready(function () {
     autoplaySpeed: 1000,
     responsive: {
       0: {
-        items: 1,
+        items: 1.3,
       },
       768: {
-        items: 1.5,
+        items: 2.5,
       },
       991: {
-        items: 2,
+        items: 3,
       },
       1200: {
         items: 3.6,
