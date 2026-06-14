@@ -542,6 +542,52 @@
     .other-hero-section .contact-hero-v1 {
         max-width: 100px;
     }
+
+    .main-blog-section .blog-main-v1,
+    .other-hero-section .contact-hero-v1 {
+        display: none;
+    }
+
+    .contact-info .info {
+        padding: 0px 20px;
+    }
+
+    .contact-info .info .info-row {
+        padding: 10px 0px;
+    }
+
+    .contact-info .contact-info-v1 {
+        display: none;
+    }
+
+    .contact-info .info h3 {
+        font-size: 32px;
+    }
+
+    .contact-info {
+        flex-direction: column-reverse;
+    }
+
+    .contact-info .info {
+        width: 100%;
+    }
+
+    .contact-info .map {
+        width: 100%;
+    }
+
+    .contact-form-section .form-card .form-group {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .contact-form-section .form-card .form-group .title {
+        width: 100%;
+    }
+
+    .contact-form-section .form-card .form-group .input {
+        width: 100%;
+    }
 }
 
 @media screen and (min-width: 769px) {
@@ -927,6 +973,52 @@
 
     .articles-section {
         margin-bottom: 40px;
+    }
+
+    .contact-form-section {
+        padding: 40px 0px;
+    }
+
+    .contact-form-section .form-card .form-group .title {
+        padding: 0px 0px 10px;
+    }
+
+    .contact-form-section .form-card .form-group .checkbox-group {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .contact-form-section .form-card .form-group .input {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-form-section .form-card .form-group.bottom {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+    }
+
+    .btn-submit {
+        max-width: 250px;
+    }
+
+    .contact-info .info .info-row .row {
+        align-items: center;
+
+    }
+
+    .contact-info {
+        margin-bottom: 60px;
     }
 }
 
