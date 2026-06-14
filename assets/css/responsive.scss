@@ -441,7 +441,7 @@
 
     .other-hero-section .hero-content {
         margin-top: -20px;
-        overflow: show;
+        overflow: auto;
         position: relative;
         z-index: 1;
     }
@@ -1106,5 +1106,8 @@
 
     .facility-section {
         padding: 60px 0px 100px;
+    }
+    .other-hero-section .hero-content {
+        padding: 0px 10px;
     }
 }
