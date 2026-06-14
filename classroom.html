@@ -112,7 +112,7 @@
                     藤沢遠藤教室
                 </span>
             </div>
-            <div class="menu-btn">
+            <div class="menu-btn" data-bs-toggle="offcanvas" data-bs-target="#mobileNav" aria-controls="mobileNav" style="cursor:pointer;">
                 <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect width="50" height="50" rx="25" fill="#FCC202" />
                     <path
@@ -124,6 +124,44 @@
                 </svg>
             </div>
         </section>
+
+        <!-- Mobile Offcanvas Nav -->
+        <div class="offcanvas offcanvas-end mobile-offcanvas" tabindex="-1" id="mobileNav" aria-labelledby="mobileNavLabel">
+            <div class="offcanvas-header">
+                <div class="nav-brand">
+                    <a href="index.html">
+                        <img src="assets/images/logo.svg" class="logo" alt="">
+                    </a>
+                </div>
+                <button type="button" class="offcanvas-close-btn" data-bs-dismiss="offcanvas" aria-label="Close">
+                    <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="44" height="44" rx="22" fill="#FF7B32"/>
+                        <line x1="14" y1="14" x2="30" y2="30" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+                        <line x1="30" y1="14" x2="14" y2="30" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="offcanvas-body">
+                <nav class="mobile-nav-links">
+                    <a href="classroom.html" class="active">教室について</a>
+                    <a href="#">支援内容</a>
+                    <a href="facilities.html">施設紹介</a>
+                    <a href="#">スタッフ紹介</a>
+                    <a href="blog.html">ブログ</a>
+                    <a href="contact.html">ご利用案内</a>
+                </nav>
+                <div class="mobile-nav-action">
+                    <a href="contact.html" class="btn btn-primary w-100">
+                        <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.85 5.29231V7.38091H0.5V5.29231C0.5 3.91237 1.6194 2.79297 3.00005 2.79297H3.94042V3.94013C3.94042 4.57297 4.45438 5.08694 5.08758 5.08694C5.72078 5.08694 6.23439 4.57297 6.23439 3.94013V2.79297H13.1156V3.94013C13.1156 4.57297 13.6295 5.08694 14.2624 5.08694C14.8952 5.08694 15.4096 4.57297 15.4096 3.94013V2.79297H16.3506C17.7316 2.79297 18.85 3.91237 18.85 5.29231Z" stroke="white" stroke-miterlimit="10"/>
+                            <path d="M18.85 7.38086V18.6439C18.85 20.0249 17.7316 21.1433 16.3506 21.1433H3.00005C1.6194 21.1433 0.5 20.0249 0.5 18.6439V7.38086H18.85Z" stroke="white" stroke-miterlimit="10"/>
+                        </svg>
+                        見学予約はこちら
+                    </a>
+                </div>
+            </div>
+        </div>
+
         <section class="other-hero-section">
             <div class="hero-content">
                 <img src="assets/images/classroom-hero-v1.png" class="classroom-hero-v1" alt="">

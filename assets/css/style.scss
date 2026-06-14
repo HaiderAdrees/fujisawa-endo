@@ -2592,3 +2592,92 @@ button {
 .order-2 {
     order: 2 !important;
 }
+
+// Mobile Offcanvas Nav
+.mobile-offcanvas {
+    width: 300px !important;
+    background: #FEFAF0;
+    border-left: 3px solid #FFE742;
+
+    .offcanvas-header {
+        padding: 16px 20px;
+        border-bottom: 2px dashed #FFE742;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .nav-brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            .logo {
+                height: 44px;
+            }
+
+            span {
+                font-family: 'Rounded Mplus 1c';
+                font-weight: 500;
+                font-size: 13px;
+                line-height: 1.4;
+                color: #9C4500;
+            }
+        }
+
+        .offcanvas-close-btn {
+            background: none;
+            border: none;
+            padding: 0;
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+    }
+
+    .offcanvas-body {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        .mobile-nav-links {
+            display: flex;
+            flex-direction: column;
+
+            a {
+                font-family: 'Rounded Mplus 1c';
+                font-weight: 500;
+                font-size: 16px;
+                color: #534133;
+                padding: 16px 10px;
+                border-bottom: 2px dashed #FFE742;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+
+                &::before {
+                    content: '';
+                    display: inline-block;
+                    width: 8px;
+                    height: 8px;
+                    background: #FCC202;
+                    border-radius: 50%;
+                    flex-shrink: 0;
+                }
+
+                &:hover,
+                &.active {
+                    color: $primary;
+                    padding-left: 16px;
+                }
+            }
+        }
+
+        .mobile-nav-action {
+            .btn-primary {
+                height: 54px !important;
+                font-size: 15px !important;
+                justify-content: center !important;
+            }
+        }
+    }
+}
