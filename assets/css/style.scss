@@ -2705,6 +2705,15 @@ button {
     }
 }
 
+@keyframes heartbeat {
+    0%   { transform: scale(1); }
+    15%  { transform: scale(1.1); }
+    30%  { transform: scale(1); }
+    45%  { transform: scale(1.08); }
+    60%  { transform: scale(1); }
+    100% { transform: scale(1); }
+}
+
 .reservation-btn {
     display: flex;
     flex-direction: column;
@@ -2715,11 +2724,18 @@ button {
     position: fixed;
     width: 100px;
     height: 100px;
-    bottom: 20px;
+    bottom: 60px;
     right: 20px;
     z-index: 99;
     background: #177420;
     border-radius: 100px;
+    animation: heartbeat 2s ease-in-out infinite;
+
+    &:hover {
+        animation-play-state: paused;
+        transform: scale(1.12);
+        box-shadow: 0 10px 28px rgba(23, 116, 32, 0.45);
+    }
 
     span {
         font-family: 'Noto Sans JP';
