@@ -2863,6 +2863,100 @@ a:has(.blog-card) {
         }
     }
 
+    .bd-highlight {
+        background: #FFFDE8;
+        border: 2px dashed #FCC202;
+        border-radius: 20px;
+        padding: 28px 32px;
+        margin: 32px 0;
+
+        .bd-highlight-title {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-family: 'Rounded Mplus 1c';
+            font-size: 16px;
+            font-weight: 700;
+            color: #177420;
+            margin-bottom: 18px;
+        }
+
+        .bd-list {
+            padding-left: 0;
+            list-style: none;
+            margin: 0;
+
+            li {
+                font-family: 'Noto Sans JP';
+                font-size: 14px;
+                line-height: 1.9;
+                color: #534133;
+                padding: 8px 0 8px 20px;
+                position: relative;
+                border-bottom: 1px dashed rgba(252, 194, 2, 0.4);
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 8px;
+                    height: 8px;
+                    background: #4F9858;
+                    border-radius: 50%;
+                }
+
+                &:last-child {
+                    border-bottom: none;
+                }
+
+                strong {
+                    color: #177420;
+                    margin-right: 8px;
+                }
+            }
+        }
+    }
+
+    .bd-comment-box {
+        display: flex;
+        gap: 20px;
+        align-items: flex-start;
+        background: #F4FBF4;
+        border-left: 4px solid #4F9858;
+        border-radius: 0 20px 20px 0;
+        padding: 28px 32px;
+        margin: 32px 0;
+
+        .bd-comment-icon {
+            flex-shrink: 0;
+            margin-top: 4px;
+        }
+
+        .bd-comment-text {
+            .bd-comment-label {
+                display: inline-block;
+                font-family: 'Rounded Mplus 1c';
+                font-size: 13px;
+                font-weight: 700;
+                color: #fff;
+                background: #4F9858;
+                border-radius: 100px;
+                padding: 3px 14px;
+                margin-bottom: 12px;
+            }
+
+            p {
+                font-family: 'Noto Sans JP';
+                font-size: 14px;
+                line-height: 2;
+                color: #534133;
+                margin: 0;
+            }
+        }
+    }
+
     .bd-tags {
         display: flex;
         flex-wrap: wrap;
